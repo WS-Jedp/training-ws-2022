@@ -1,0 +1,101 @@
+:root {
+    --color-light: rgb(249, 246, 255);
+    --color-dark: rgb(24, 23, 28);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.page-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    box-shadow: -6px 21px 30px 3px rgba(0,0,0, .12);
+    margin: 21px;
+    background-color: #fff;
+}
+
+.option-list {
+    padding: 18px 21px;
+    background-color: #fff;
+    box-shadow: -3px 12px 60px 3px rgba(0,0, 0, .12);
+    border-radius: 12px;
+    min-width: 300px;
+    width: 80%;
+    max-width: 600px;
+    min-height: 420px;
+    height: 420px;
+    max-height: 420px;
+    margin: 30px;
+    overflow-y: auto;
+}
+
+.list-option {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0, .1);
+    border-bottom: 1px solid rgba(0,0,0, .1);
+    padding: 12px 0;
+    color: var(--color-dark);
+    padding-left: 9px;
+    margin: 12px 0;
+    font-weight: lighter;
+    background-color:rgba(255,255,255, 1);
+    transition: .3s ease-in-out;
+}
+
+.list-option:hover {
+    background-color: rgba(226, 226, 226, 1);
+    transform: translateX(6px);
+}
+
+.emmet-explanation {
+    margin: 21px;
+    font-weight: lighter;
+    letter-spacing: .6px;
+    line-height: 24px;
+}
+
+.emmet-example {
+    margin: 21px;
+    padding: 21px;
+    border-radius: 3px;
+    background-color: rgb(237, 237, 237);
+    font-weight: 300;
+    letter-spacing: .6px;
+    font-family: monospace;
+    white-space: pre;
+    overflow: auto;
+}
+
+.emmet-example p, .emmet-example span, .emmet-example div, .emmet-example *{
+    font-weight: 300;
+    letter-spacing: .6px;
+    font-family: monospace;
+}
+
+.back-link {
+    margin-top: 12px;
+    text-decoration: underline;
+    font-weight: lighter;
+    color: #000;
+}
