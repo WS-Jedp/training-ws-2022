@@ -116,3 +116,59 @@
     font-weight: lighter;
     color: #000;
 }
+
+.table {
+    position: relative;
+    width: 90%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+.table thead, .table tfoot {
+    background-color: rgb(242, 242, 242);
+    padding: 12px 3px;
+}
+
+.table th {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #000;
+}
+
+.table td {
+    padding: 9px;
+    border: 1px solid #000;
+}
+.table tr {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transition: 0.21s ease-in-out;
+    cursor: default;
+}
+
+.table tr:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.table-center {
+    text-align: center;
+}
+
+.table-center thead, .table-center th, .table-center tr {
+    text-align: center;
+}
+
+#canvas {
+    background-color: rgb(235, 235, 235);
+}
+
+.header {
+    background: lightblue;
+}
+.body {
+    background: pink;
+    min-height: 210px;
+}
+.footer {
+    background: lightyellow;
+}

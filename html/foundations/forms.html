@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Forms</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Forms</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                With HTML we can create forms that will help us to receive the input or data from a user, with the form we can interact with all the input that the user gives to our website or application. <br>
+                So, for start asking for information or data to the user we need to use the input tags, and for doing that we use the tag &lt;form&gt;, inside of this form we can use all the input data.
+            </p>
+
+            <p class="emmet-explanation">
+                There is multiple input tags that will help us to ask and recollect data from the user.
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>Fieldset:</strong> There is the tag &lt;fieldset&gt;, that will help us to group multiple inputs or fields that are corelate to a same context data.
+            </p>
+            <p class="emmet-example">
+                &lt;fieldset&gt;
+                    &lt;input type="text" name="username"&gt;
+                    &lt;input type="email" name="email"&gt;
+                &lt;/fieldset&gt;
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>Legend:</strong> This tag of &lt;legend&gt; will help us to show to the user some text that explains the context of the fieldset.
+            </p>
+            <p class="emmet-example">
+                &lt;fieldset&gt;
+                    &lt;legend&gt;
+                        User data
+                    &lt;/legend&gt;
+                    &lt;input type="text" name="username"&gt;
+                    &lt;input type="email" name="email"&gt;
+                &lt;/fieldset&gt;
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>Label:</strong> This tag of &lt;label&gt; will help us to create a direct context of an input, so we can use the label tag to realte some text or some information directly with an input of our form. For doing that we use the attribute for, which should have the value of the id from the input that is directly relate.
+            </p>
+            <p class="emmet-example">
+                &lt;fieldset&gt;
+                    &lt;legend&gt;
+                        User data
+                    &lt;/legend&gt;
+                    
+                    &lt;label for="username"&gt;
+                        Username
+                    &lt;/label&gt;
+                    &lt;input type="text" name="username" id="username"&gt;
+                &lt;/fieldset&gt;
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>Label:</strong> This tag of &lt;label&gt; will help us to create a direct context of an input, so we can use the label tag to realte some text or some information directly with an input of our form. For doing that we use the attribute for, which should have the value of the id from the input that is directly relate.
+            </p>
+            <p class="emmet-example">
+                &lt;fieldset&gt;
+                    &lt;legend&gt;
+                        User data
+                    &lt;/legend&gt;
+                    
+                    &lt;label for="username"&gt;
+                        Username
+                    &lt;/label&gt;
+                    &lt;input type="text" name="username" id="username"&gt;
+                &lt;/fieldset&gt;
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>Textarea:</strong> This tag of &lt;textarea&gt; will help us to recollect text input data from our user, with the textarea we can specify how we are going to render this input, so we can specify the number of rows and columns that should have the input. <br>
+                The majority of input tags offer us the attribute placeholder that will help us to show to the user an example of the text or the answer that we expect to save. 
+            </p>
+            <p class="emmet-example">
+                &lt;fieldset&gt;
+                    &lt;legend&gt;
+                        User data
+                    &lt;/legend&gt;
+                    
+                    &lt;label for="description"&gt;
+                        Description
+                    &lt;/label&gt;
+                    &lt;textarea name="description" id="description" placeholder="Tell us a little bit about yourself" rows="12" col="12"&gt;
+                &lt;/fieldset&gt;
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>Select:</strong> This tag of &lt;select&gt; will help us show to the user multiple options that he could pick, the select is render as a bar of options where the user only can pick one option. <br>
+                The select tag works with the &lt;option&gt; tag that is the one that indicates the value and the text that the user can pick from the options input.
+            </p>
+
+            <div class="emmet-explanation">
+                The option tag can receive multiple attributes, such as the value that it will represent and also the attribute selected, that will select by default the options that has this attribute in a true value.
+            </div>
+            <p class="emmet-example">
+                &lt;fieldset&gt;
+                    &lt;legend&gt;
+                        User data
+                    &lt;/legend&gt;
+                    
+                    &lt;label for="gender"&gt;
+                        Gender
+                    &lt;/label&gt;
+
+                    &lt;select name="gender" id="gender"&gt;
+                        &lt;option value="Male"&gt;
+                            Male
+                        &lt;/option&gt;
+
+                        &lt;option value="Female"&gt;
+                            Female
+                        &lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/fieldset&gt;
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>Input:</strong> The input tag will help us to recollect data, the special thing about the input tag is that will help us to receive a certain type of value, such a string, a number, a boolean, etc. <br>
+                We can do that through the attribute type, that can be text, number, date, range, etc.  
+            </p>
+            <p class="emmet-example">
+                &lt;fieldset&gt;
+                    &lt;legend&gt;
+                        User data
+                    &lt;/legend&gt;
+                    
+                    &lt;label for="birthdate"&gt;
+                        Birthdate
+                    &lt;/label&gt;
+                    &lt;input type="date" name="birthdate" id="birthdate"&gt;
+                &lt;/fieldset&gt;
+            </p>
+
+            <p class="emmet-explanation">
+               According to the type of the input, we can use another attributes to make quick validations with the data that the user can input to us. <br>
+               Some of these attributes are max, min, maxlength, minlength, disabled, readonly, step.
+            </p>
+
+        </ol>
+    </section>
+</body>
+</html>

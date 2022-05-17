@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Graphics</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Graphics</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                With HTML we can do graphs easily with two main tags, canvas and svg tags. <br>
+                To draw with canvas we need to do it with javascript code, where we can specify or indicate what we are going to draw. 
+            </p>
+
+            <div class="emmet-explanation">
+                <canvas id="canvas" width="300" height="300">
+                </canvas>
+            </div>
+
+            <p class="emmet-explanation">
+                The other tag to create grpahics is the SVG tag, which will help us to render vectors in our HTML document.
+            </p>
+
+            <div class="emmet-explanation">
+                <svg width="200" height="200">
+                    <circle cx="100" cy="100" fill="lightblue" r="42" stroke="lightgreen" stroke-widht="3"></circle>
+                </svg>
+            </div>
+        </ol>
+    </section>
+
+    <script src="../../assets/scripts/canvas.js"></script>
+</body>
+</html>

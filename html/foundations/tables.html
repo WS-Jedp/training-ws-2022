@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Tables</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Tables</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                The tables are one of the basic elements of HTML that help us to organize data or information to render it in a more organized way.
+                The tables are compose by multiple elements, the header, the content that is is based in the rows and columns, and the footer. 
+            </p>
+
+            <p class="emmet-explanation">
+                So, for create a table we use the tag &lt;table&gt;, inside of this we can add the another components, such the header, the content and the footer.
+            </p>
+
+            <p class="emmet-explanation">
+                All the tables works with rows and columns, we can create a column with the tag &lt;td&gt; and we can create a row with the &lt;tr&gt;. <br>
+                We need to identify the difference from the rows of the header and the rows from the content, HTML give us the tag to create the header row to indicates the titles of our table.
+            </p>
+
+            <p class="emmet-example">
+                &lt;table class="table"&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;
+                                #
+                            &lt;/th&gt;
+                            &lt;th&gt;
+                                name
+                            &lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;
+                                1
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Juanes
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;
+                                2
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Valery
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+
+                         &lt;tr&gt;
+                            &lt;td&gt;
+                                2
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Valery
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+
+                    &lt;tfooter&gt;
+                        &lt;tr&gt;
+                            &lt;th colspan="2"&gt;
+                                Footer of the table
+                            &lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/tfooter&gt;
+                &lt;/table&gt;
+            </p>
+
+            <p class="emmet-explanation">
+                This code should render the next table.
+            </p>
+
+            <table class="emmet-explanation table">
+                <thead>
+                    <tr>
+                        <th colspan="1" rowspan="1">
+                            #
+                        </th>
+                        <th colspan="2" rowspan="3">
+                            Name
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Juanes</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Valery</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">
+                           <small>Footer of the table</small>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </ol>
+    </section>
+</body>
+</html>
