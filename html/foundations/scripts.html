@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Scripts</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Scripts</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                The script tag it will help us to create or use JavaScript in our website, we can write JavaScript in our HTML document or we can import a JS file into our document.
+            </p>
+            <p class="emmet-explanation">
+                The best practice is to import an external document of JS into our website, for doing that we need to know the attribute src, that it will contain the value of the URL where is our JS file. <br>
+                Also we can specify the type of code that is being include, that by default is JavaScript 
+            </p>
+            <p class="emmet-explanation">
+                <strong>Internal Script</strong>
+            </p>
+            <div class="emmet-example">
+                &lt;script&gt;
+                    const msg = "Hello world"
+                    alert(msg)
+                &lt;/script&gt;
+            </div>
+            <p class="emmet-explanation">
+                <strong>External Script</strong>
+            </p>
+            <div class="emmet-example">
+                &lt;script src="assets/scripts/main.js"&gt;&lt;/script&gt;
+            </div>
+
+
+                
+        </ol>
+    </section>
+</body>
+</html>

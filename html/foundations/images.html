@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Images</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Images</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                With HTML we can render images with the img tag, that receive one obligatory attribute that it is src, is the one that it will indicate the URL of the image that the document need to render. <br>
+                But there is also more important attributes such as alt, that it is a text that describes the image, this will help us to be a more accessible website and increase our visibility in the internet. <br>
+            </p>
+            <p class="emmet-explanation">
+                We can specify the width of an image with the width attribute or we can use classes with CSS.
+            </p>
+            <p class="emmet-explanation">
+                There is a special attribute that help us to indicate multiple images and the browser will decide which one is better to render according to the weight and resolution of the device. <br>
+                This attribute is the srcset one.
+            </p>
+            <div class="emmet-example">
+                &lt;img 
+                    src='assets/images/google-logo.png' 
+                    alt="Logo from google"
+                    srcset="google-logo-sm.png 320w,
+                        google-logo-md.png 480w,
+                        google-logo-lg.png 800w"
+                    sizes="(max-width: 320px) 280px,
+                        (max-width: 480px) 440px,
+                        800px"
+                &gt;
+            </div>
+        </ol>
+    </section>
+</body>
+</html>
