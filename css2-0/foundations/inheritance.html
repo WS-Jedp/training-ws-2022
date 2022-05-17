@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Inheritance</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+
+    <style>
+        body {
+            color: black;
+        }
+        .inherit-list {
+            color: green;
+        }
+        .inherit-list-element {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Inheritance</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                CSS can work with Inheritance, this means that an element can inherit the value of some property, so we don't need to specify the value. <br>
+                So, if we have a list that renders black text by default, we can define that the value of some li inherit the color of the parent. 
+            </p>
+            <div class="emmet-explanation">
+                <ol>
+                    <li>Hello World 1</li>
+                    <li>Hello World 2</li>
+                    <li class="inherit-list">
+                        <ul>
+                            <li>Welcome here</li>
+                            <li class="inherit-list-element">Inherit</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </ol>
+    </section>
+</body>
+</html>

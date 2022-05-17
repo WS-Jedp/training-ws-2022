@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Specifity</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Specifity</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                All the lines of CSS have their own weight so the heavier is the instruction, it will be more important to apply those styles into the elements selected. <br>
+                To compute the weight of a CSS declaration it is with their selectors, the more specific it is the selector the more weight it will have. So if we select .header #nav it will be more important than #nav 
+            </p>
+            <div class="emmet-example">
+                .header #nav {
+                    ... This is heavier
+                }
+
+                #nav {
+                    ... This is ligther
+                }
+            </div>
+
+            <p class="emmet-explanation">
+                If there is more than two declarations with the same weight, CSS will pick the last one in our CSS document.
+            </p>
+            <p class="emmet-explanation">
+                It is important to know that the ID is heavier than the class selector, and the class selector is heavier than the tag selector.
+            </p>
+        </ol>
+    </section>
+</body>
+</html>

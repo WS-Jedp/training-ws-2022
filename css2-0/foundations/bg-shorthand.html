@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Bg Shorthand</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+
+    <style>
+        .image {
+            position: relative;
+            height: 180px;
+            background: #fff url(../../assets/images/WS_Logo_DarkBlue_RGB.png) no-repeat center center;
+            background-size: 100px;
+            box-shadow: 0px 0px 42px 6px rgba(0, 0, 0, .1);
+            margin: 30px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Bg Shorthand</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                We can use the property background to apply all the background image properties in one line, to apply correctly we need to follow the next order:
+            </p>
+            <div class="emmet-example">
+                .bg-image {
+                    background: #fff url(../../assets/images/WS_Logo_DarkBlue_RGB.png) no-repeat center center;
+                }
+            </div>
+            <div class="image"></div>
+        </ol>
+    </section>
+</body>
+</html>

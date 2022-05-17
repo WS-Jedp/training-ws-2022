@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Float</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+
+    <style>
+        .image {
+            position: relative;
+            height: 180px;
+            box-shadow: 0px 0px 42px 6px rgba(0, 0, 0, .1);
+            margin: 30px;
+        }
+        .square {
+            display: inline-flex;
+            width: 30px;
+            height: 30px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Float</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                There is another way to make our element be in some place of another element instead of using flexbox or relative or absolute positions we can use the float positions. 
+            </p>
+           
+            <div class="image">
+                <div class="square" style="float: left;"></div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, ea!
+            </div>
+            <div class="image">
+                <div class="square" style="float: right;"></div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, ea!
+            </div>
+        </ol>
+    </section>
+</body>
+</html>

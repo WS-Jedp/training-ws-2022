@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Lists</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Lists</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                We can interact and give special styles to the lists of our HTML document, we can specify the type of style that will have or even the position of the decoration.
+            </p>
+
+            <p class="emmet-example">
+                .list {
+                    list-style-type: circle | square | upper-roman | lower-alpha
+                }
+            </p>
+
+            <p class="emmet-explanation">
+                We can also give an image as decoration
+            </p>
+
+            <p class="emmet-example">
+                .list {
+                    list-style-image: url(../../assets/images/worldskills.png);
+                }
+            </p>
+
+            <p class="emmet-explanation">
+                Lastly we can define the position of the decoration, if it will be inside of the table element or outside. 
+            </p>
+
+            <p class="emmet-example">
+                .list {
+                    list-style-position: inside | outside;
+                }
+            </p>
+
+            <p class="emmet-explanation">
+                We can use the shorthand of the list-style property to pass all these attribute in one line.
+            </p>
+
+            <p class="emmet-example">
+                .list {
+                    list-style: square inside url(...);
+                }
+            </p>
+
+           <div class="emmet-explanation">
+               <strong>Example</strong>
+               <ol>
+                    <li style="list-style: upper-roman none inside;">Hello</li>
+                    <li style="list-style: upper-roman none inside;">World</li>
+                </ol>
+           </div>
+        </ol>
+    </section>
+</body>
+</html>

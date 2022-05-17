@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Basic Selectors</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Basic Selectors</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                With CSS we have three main ways to select any HTML element in a document, through the class, the id or the general selector of the tag. <br>
+                We need to have in mind that the class and tag selectors will affect all the elements in our HTML document, while the ID selector will affect only the element with the ID.
+            </p>
+            <p class="emmet-explanation">
+                To select elements that are mark with a class, we use the dot notation (.class-name)
+            </p>
+            <p class="emmet-example card">
+                .header {
+                    color: white;
+                }
+            </p>
+
+            <p class="emmet-explanation">
+                To select elements with their tag we just need to write the tag of the elements that we want to affect.
+            </p>
+            <p class="emmet-example card">
+                p, h1, h3 {
+                    font-weight: bold;
+                }
+            </p>
+
+            <div class="emmet-explanation">
+                To select an element through this ID we just need to use the # symbol followed by the name of the ID.
+            </div>
+            <div class="emmet-example card">
+                #footer {
+                    widt: 100%;
+                }
+            </div>
+        </ol>
+    </section>
+</body>
+</html>

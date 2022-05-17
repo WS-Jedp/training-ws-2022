@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Alpha Colors</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+
+    <style>
+        .color-square {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 120px;
+            color: #fff;
+            margin: 9px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Alpha Colors</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                There is multiples to apply the alpha color into our colors, with rgba, hsla, or adding two more numbers to the HEX value.
+            </p>
+            <div class="emmet-explanation">
+                <div class="color-square" style="background-color: rgba(0, 0,0, 1);">
+                    rgba(0,0,0,1)
+                </div>
+                <div class="color-square" style="background-color: rgba(0, 0, 0, 0.6);">
+                    hsla(0, 0, 0, .6);
+                </div>
+                <div class="color-square" style="background-color: #00000030;">
+                    #00000003;
+                </div>
+                <div class="color-square" style="background-color: rgba(0, 0,0, .05);">
+                    rgba(0, 0,0, .1);
+                </div>
+            </div>
+        </ol>
+    </section>
+</body>
+</html>

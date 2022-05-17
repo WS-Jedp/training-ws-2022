@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Bg Attatchment</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+
+    <style>
+        .image {
+            position: relative;
+            height: 180px;
+            background-size: 100px;
+            background-image: url(../../assets/images/WS_Logo_DarkBlue_RGB.png);
+            background-repeat: repeat-x;
+            box-shadow: 0px 0px 42px 6px rgba(0, 0, 0, .1);
+            background-attachment: scroll;
+            margin: 30px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Bg Attatchment</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                we can attach an image into an element to define how it will behave when the scroll is used in the element.
+            </p>
+            <div class="emmet-explanation image">
+                <strong>Scroll</strong>
+                <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nihil reiciendis officia laborum consectetur adipisci, eligendi odit, vitae maxime illum quibusdam fuga possimus repellendus, ab minus voluptas necessitatibus soluta tenetur enim culpa odio. Nostrum ducimus laudantium dolor eveniet adipisci maxime sunt perspiciatis neque nulla inventore! Culpa praesentium exercitationem quis molestiae deleniti, recusandae impedit voluptatibus possimus et tempore enim iste saepe consectetur. Non odio id eum excepturi quia quam quibusdam magnam nobis sequi aliquam vero accusantium culpa maxime possimus qui nihil labore quaerat architecto quasi, delectus neque eligendi recusandae sapiente! Distinctio.
+            </div>
+            <div class="emmet-explanation image" style="background-attachment: fixed;">
+                <strong>Fixed</strong>
+                <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nihil reiciendis officia laborum consectetur adipisci, eligendi odit, vitae maxime illum quibusdam fuga possimus repellendus, ab minus voluptas necessitatibus soluta tenetur enim culpa odio. Nostrum ducimus laudantium dolor eveniet adipisci maxime sunt perspiciatis neque nulla inventore! Culpa praesentium exercitationem quis molestiae deleniti, recusandae impedit voluptatibus possimus et tempore enim iste saepe consectetur. Non odio id eum excepturi quia quam quibusdam magnam nobis sequi aliquam vero accusantium culpa maxime possimus qui nihil labore quaerat architecto quasi, delectus neque eligendi recusandae sapiente! Distinctio.
+            </div>
+        </ol>
+    </section>
+</body>
+</html>

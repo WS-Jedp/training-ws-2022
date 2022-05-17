@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Pseudoclasses</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+
+    <style>
+        .simple-square {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #000;
+            transition: .6s ease-in-out;
+            box-shadow: 0px 0px 42px 6px rgba(0, 0, 0, 0);
+        }
+
+        .simple-square:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 42px 6px rgba(0, 0, 0, .2);
+
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Pseudoclasses</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                The pseudoclasses are special selectors that will help us to add more dynamic styles to our elements, each type of pseudoelement has their own purpose. 
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>:hover</strong> -> The hover pseudoclass will help us to add styles when the user hovers some element with the mouse
+            </p>
+            <div class="emmet-explanation">
+                <div class="simple-square"></div>
+            </div>
+
+            <p class="emmet-explanation">
+                <strong>:focus</strong> -> The focus pseudoclass will help us to add styles when the user press some element and it is focused on it.
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>:nth-child()</strong> -> The nth-child() pseudoclass will help us to add styles to the elements that fullfill the numeric rule that we put inside of the parenthesis, such as even, odd, or a numerical notation, like 2n+1
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>:first</strong> -> The first pseudoclass will help us to add styles to all the first child from the element
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>:target</strong> -> The target pseudoclass will help us to add styles when the user activates the target of an element in the current HTML document. The target is when in our URL it is the hash with the name of the target.
+            </p>
+           
+
+            
+        </ol>
+    </section>
+</body>
+</html>

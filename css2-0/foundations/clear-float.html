@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Foundations - Clear Float</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+
+    <style>
+        .image {
+            position: relative;
+            height: 180px;
+            box-shadow: 0px 0px 42px 6px rgba(0, 0, 0, .1);
+            margin: 30px;
+        }
+        .square {
+            display: inline-flex;
+            width: 30px;
+            height: 30px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>HTML Foundations - Clear Float</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                We can specify how it should behave a float element if it is close to a element, this element can specify if the float element should stay in his place or be clear or move down.
+            </p>
+           
+            <div class="image">
+                <div class="square" style="float: left;"></div>
+                <p style="clear: both;">
+                    With clear <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, ea!
+                </p>
+            </div>
+
+            <div class="image">
+                <div class="square" style="float: left;"></div>
+                Without clear <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, ea!
+            </div>
+        </ol>
+    </section>
+</body>
+</html>
