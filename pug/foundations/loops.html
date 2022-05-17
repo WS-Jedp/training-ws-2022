@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUG Foundations - Loop</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>PUG Foundations - Loop</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                With PUG we can make multiple loops through our JS data, writing once our HTML code but render it the times that are needed according to our data.
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>
+                    each loop:
+                </strong>
+                One of the loops that offer us PUG is the each loop, that can iterate arrays and objects.
+            </p>
+
+            <p class="emmet-example card">
+                - var data = ["Juanes", "Oscar"]
+
+                ul.list
+                    each name, index in data
+                        a(href=`www.worldskills.org/people/?name=${name}`)
+                            li.element #{name}
+
+                --- Result:
+
+                &lt;ul class="list"&gt;
+                    &lt;a href="www.worldskills.org/people/?name=Juanes"&gt;
+                      &lt;li class="element"&gt;  
+                        Juanes
+                      &lt;/li&gt;  
+                    &lt;/a&gt;
+
+                    &lt;a href="www.worldskills.org/people/?name=Oscar"&gt;
+                      &lt;li class="element"&gt;  
+                        Oscar
+                      &lt;/li&gt;  
+                    &lt;/a&gt;
+                &lt;/ul&gt;
+            </p>
+           
+        </ol>
+    </section>
+</body>
+</html>

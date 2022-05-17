@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUG Foundations - Introductions</title>
+
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section class="container">
+
+        <div class="page-logo">
+            <img src="../../assets/images/html.svg" alt="HTML logo">
+        </div>
+
+        <h3>PUG Foundations - Introduction</h3>
+        <a href="../index.html" class="back-link">Go Back</a>
+        <ol class="option-list">
+            <p class="emmet-explanation">
+                PUG is a preprocessor of HTML that will help us to write a cleaner HTML, this preprocessor use JavaScript to compiole the .pug files into HTML.
+            </p>
+            <p class="emmet-explanation">
+                PUG help us giving us the chance of write HTML and JS in the same file, making it really dynamic at the moment of create new websites faster.
+            </p>
+
+            <p class="emmet-explanation">
+                <strong>
+                    Syntax:
+                </strong>
+                To write with PUG syntax we just write the name of the tag without the symbols, and to add attributes we write them into parenthesis with his value. <br>
+                The special thing about PUG is that it works with indentation, like Python, so all the elements that are one indentation more it will be considered a child of the upper element.
+            </p>
+
+            <p class="emmet-example card">
+                p.text
+                    Hello world
+
+                a.link(href='www.google.com')
+                    Go to google
+
+                --- Result:
+
+                &lt;p class="text"&gt;
+                    Hello world
+                &lt;/p&gt;
+
+                &lt;a class="link" href="www.google.com"&gt;
+                    Go to google
+                &lt;/a&gt;
+            </p>
+           
+        </ol>
+    </section>
+</body>
+</html>
